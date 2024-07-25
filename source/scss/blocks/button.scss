@@ -1,0 +1,10 @@
+.button {
+  padding: 15px 45px;
+  background-color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 100px;
+
+  &--second {
+    background-color: transparent;
+  }
+}
