@@ -52,11 +52,19 @@
   &--nav {
     color: $color-dark-s;
     text-decoration: none;
+
+    &--catalog {
+      color: $color-dark-l;
+    }
   }
 
   &--nav-current {
     color: $color-light-s;
     // text-decoration: 2px solid $color-primary;   -------ПОЧЕМУ НЕ РАБОТАЕТ?
+
+    &--catalog {
+      color: $color-dark-3xl;
+    }
   }
 }
 
@@ -77,11 +85,19 @@
 .logo-title {
   @include font ($family: $font-secondary, $size: 32px, $line-height: 110%, $color: $color-primary);
   letter-spacing: 6%;
+
+  &--catalog {
+    color: $color-dark-l;
+  }
 }
 
 .logo-subtitle {
   @include font ($size: 13px, $line-height: 120%, $color: $color-white);
   letter-spacing: 10%;
+
+  &--catalog {
+    color: $color-dark-3xl;
+  }
 }
 
 .button-text {

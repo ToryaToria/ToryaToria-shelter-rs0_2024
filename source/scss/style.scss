@@ -20,10 +20,9 @@
 
 // @import "./blocks/icon.scss";
 @import "./blocks/main-nav.scss";
-@import "./blocks/main-header.scss";
+@import "./blocks/header.scss";
 
 // @import "./blocks/hamburger.scss";
-@import "./blocks/hero.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/button.scss";
 
@@ -49,7 +48,7 @@
 
 // BLOCKS catalog
 
-// @import "./blocks/catalog-main.scss";
+@import "./blocks/catalog.scss";
 // @import "./blocks/product-card.scss";
 // @import "./blocks/main-products.scss";
 // @import "./blocks/additional-products.scss";
