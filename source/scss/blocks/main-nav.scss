@@ -5,6 +5,38 @@
 }
 
 .main-nav__link {
+  display: block;
   padding-top: 16px;
   padding-bottom: 17px;
+
+  color: $color-dark-s;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-white;
+  }
+
+  &--catalog {
+    color: $color-dark-l;
+
+    &:hover {
+      color: $color-dark-3xl;
+    }
+  }
+
+  &--current {
+    color: $color-light-s;
+
+    &::after {
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $color-primary;
+    }
+  }
+
+  &--current-catalog {
+    color: $color-dark-3xl;
+  }
 }

@@ -47,25 +47,11 @@
 }
 
 .basic-text {
-  @include font ($size: 15px, $line-height: 160%, $color: $color-dark-xl);
+  @include font ($size: 15px, $line-height: 160%, $color: $color-dark-s);
 
-  &--nav {
-    color: $color-dark-s;
-    text-decoration: none;
-
-    &--catalog {
-      color: $color-dark-l;
-    }
-  }
-
-  &--nav-current {
-    color: $color-light-s;
-    // text-decoration: 2px solid $color-primary;   -------ПОЧЕМУ НЕ РАБОТАЕТ?
-
-    &--catalog {
-      color: $color-dark-3xl;
-    }
-  }
+&--dark {
+  color:  $color-dark-xl;
+}
 }
 
 .section-slogan {
@@ -102,6 +88,7 @@
 
 .button-text {
   @include font ($family: $font-secondary, $size: 17px, $line-height: 130%, $color: $color-dark-3xl);
+  text-decoration: none;
 }
 
 .subtitle {

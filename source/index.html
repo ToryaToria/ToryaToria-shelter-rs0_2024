@@ -9,8 +9,8 @@
 </head>
 
 <body class="page__body basic-text">
-  <header class="container header">
-    <a class="logo" href="">
+  <header class="container header dg-dark">
+    <a class="logo" href="./index.html" aria-current="page">
       <p class="logo__wrapp">
         <span class="logo-title">Cozy House</span>
         <span class="logo-subtitle">Shelter for pets in Boston</span>
@@ -19,18 +19,28 @@
 
     <nav class="main-nav">
       <ul class="main-nav__list">
-        <li class="main-nab__item"><a class="main-nav__link basic-text basic-text--nav-current" href="./index.html">About the
-            shelter</a></li>
-        <li class="main-nab__item"><a class="main-nav__link basic-text basic-text--nav" href="./catalog.html">Our pets</a></li>
-        <li class="main-nab__item"><a class="main-nav__link basic-text basic-text--nav" href="">Help the shelter</a>
+        <li class="main-nab__item">
+          <a class="main-nav__link main-nav__link--current basic-text" href="./index.html" aria-current="page">About the
+            shelter</a>
         </li>
-        <li class="main-nab__item"><a class="main-nav__link basic-text basic-text--nav" href="">Contacts</a></li>
+
+        <li class="main-nab__item">
+          <a class="main-nav__link basic-text" href="./catalog.html">Our pets</a>
+        </li>
+
+        <li class="main-nab__item">
+          <a class="main-nav__link basic-text" href="#help">Help the shelter</a>
+        </li>
+
+        <li class="main-nab__item">
+          <a class="main-nav__link basic-text" href="#contacts">Contacts</a>
+        </li>
       </ul>
     </nav>
   </header>
 
   <main class="page__main">
-    <section class="hero container">
+    <section class="hero container dg-dark">
       <h1 class="visually-hidden">Cozy House</h1>
 
       <div class="hero_wrapp">
@@ -38,7 +48,7 @@
         <p class="hero__text basic-text">We offer to give a chance to a little and nice puppy with an extremely wide and
           open heart. He or she will love you more than anybody else in the world, you will see!</p>
 
-        <button class="button button-text" type="button">Make a friend</button>
+        <a class="button button-text" href="#frends">Make a friend</a>
 
       </div>
       <img src="./img/start-screen-puppy.png" alt=puppy" width="698" height="728">
@@ -50,12 +60,14 @@
       <div class="about__wrapp">
         <h2 class="about__title section-title">About the shelter <br> “Cozy House”</h2>
 
-        <p class="about__text basic-text">Currently we have 121 dogs and 342 cats on our hands and statistics show that
+        <p class="about__text basic-text basic-text--dark">Currently we have 121 dogs and 342 cats on our hands and
+          statistics show that
           only 20% of them will find a
           family. The others will continue to live with us and will be waiting for a lucky chance to become dearly
           loved.
         </p>
-        <p class="basic-text">We feed our wards with the best food and make sure that they do not get sick, feel
+        <p class="basic-text basic-text--dark">We feed our wards with the best food and make sure that they do not get
+          sick, feel
           comfortable (including
           psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About
           12%
@@ -65,81 +77,94 @@
       </div>
     </section>
 
-    <section class="friends container">
+    <section class="friends container" id="frends">
       <h2 class="friends__title section-title">Our friends who <br>
         are looking for a house</h2>
 
-      <ul class="friends__list">
-        <li class="friends__item">
-          <img class="friends__img" src="./img/pets-katrine.png" alt="" width="270" height="270">
-          <h3 class="friends__title subtitle">Katrine</h3>
-          <button class="friends__button button button-text" type="button">Learn more</button>
-        </li>
+      <div class="slider">
+        <ul class="friends__list">
+          <li class="friends__item">
+            <img class="friends__img" src="./img/pets-katrine.png" alt="" width="270" height="270">
+            <h3 class="friends__title subtitle">Katrine</h3>
+            <button class="friends__button button button--second button-text" type="button">Learn more</button>
+          </li>
 
-        <li class="friends__item">
-          <img class="friends__img" src="./img/pets-jennifer.png" alt="" width="270" height="270">
-          <h3 class="friends__title subtitle">Jennifer</h3>
-          <button class="friends__button button button-text" type="button">Learn more</button>
-        </li>
+          <li class="friends__item">
+            <img class="friends__img" src="./img/pets-jennifer.png" alt="" width="270" height="270">
+            <h3 class="friends__title subtitle">Jennifer</h3>
+            <button class="friends__button button button--second button-text" type="button">Learn more</button>
+          </li>
 
-        <li class="friends__item">
-          <img class="friends__img" src="./img/pets-woody.png" alt="" width="270" height="270">
-          <h3 class="friends__title subtitle">Woody</h3>
-          <button class="friends__button button button-text" type="button">Learn more</button>
-        </li>
-      </ul>
+          <li class="friends__item">
+            <img class="friends__img" src="./img/pets-woody.png" alt="" width="270" height="270">
+            <h3 class="friends__title subtitle">Woody</h3>
+            <button class="friends__button button button--second button-text" type="button">Learn more</button>
+          </li>
+        </ul>
 
-      <div class="visually-hidden">
-        <button type="button">туда</button>
-        <button type="button">сюда</button>
+        <div class="slider__wrapp">
+          <button class="slider__btn slider__btn--left" type="button" >
+            <span class="visually-hidden">туда</span>
+          </button>
+
+          <button class="slider__btn slider__btn--right-" type="button" disabled>
+            <img src="./img/Arrow.svg" alt="сюда">
+            <!-- <span class="visually-hidden">сюда</span> -->
+          </button>
+        </div>
       </div>
 
 
-      <button class="friends__button button button-text">Get to know the rest</button>
+      <a class="friends__button button button-text" href="./catalog.html">Get to know the rest</a>
     </section>
 
-    <section class="help container">
+    <section class="help container" id="help">
       <h2 class="help__title section-title">How you can help <br>
         our shelter</h2>
 
       <ul class="help__list">
         <li class="help__item">
+          <img src="./img/icons/icon-pet-food.svg" width="60" height="60" alt="">
           <p class="help__title subtitle">Pet food </p>
         </li>
 
         <li class="help__item">
+          <img src="./img/icons/icon-transportation.svg" width="60" height="60" alt="">
           <p class="help__title subtitle">Transportation</p>
         </li>
 
         <li class="help__item">
+          <img src="./img/icons/icon-toys.svg" width="60" height="60" alt="">
           <p class="help__title subtitle">Toys</p>
         </li>
 
         <li class="help__item">
-          <p class="help__title subtitle"> Bowls and cups
-          </p>
+          <img src="./img/icons/icon-bowls-and-cups.svg" width="60" height="60" alt="">
+          <p class="help__title subtitle"> Bowls and cups</p>
         </li>
 
         <li class="help__item">
-          <p class="help__title subtitle"> Shampoos
-          </p>
+          <img src="./img/icons/icon-shampoos.svg" width="60" height="60" alt="">
+          <p class="help__title subtitle"> Shampoos</p>
         </li>
 
         <li class="help__item">
+          <img src="./img/icons/icon-vitamins.svg" width="60" height="60" alt="">
           <p class="help__title subtitle">Vitamins</p>
         </li>
 
         <li class="help__item">
-          <p class="help__title subtitle"> Medicines
-          </p>
+          <img src="./img/icons/icon-medicines.svg" width="60" height="60" alt="">
+          <p class="help__title subtitle">Medicines</p>
         </li>
 
         <li class="help__item">
-          <p class="help__title subtitle"> Collars / leashes
-          </p>
+          <img src="./img/icons/icon-collars-leashes.svg" width="60" height="60" alt="">
+          <p class="help__title subtitle">Collars / leashes</p>
         </li>
 
         <li class="help__item">
+          <img src="./img/icons/icon-sleeping-area.svg" width="60" height="60" alt="">
           <p class="help__title subtitle">Sleeping areas</p>
         </li>
       </ul>
@@ -152,29 +177,38 @@
         <h2 class="addition__title section-title">You can also <br> make a donation</h2>
 
         <p class="bank-text">Name of the bank / Type of bank account</p>
-        <button class="addition__button button subtitle" type="button">8380 2880 8028 8791 7435</button>
-        <p class="sub-text">Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a
-          ipsum at libero
-          sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac
-          ante ipsum primis in faucibus.</p>
+        <a class="addition__button button subtitle" href="#">8380 2880 8028 8791 7435</a>
+        <p class="sub-text">
+          Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a
+          ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et
+          malesuada fames ac ante ipsum primis in faucibus.
+        </p>
       </div>
 
     </section>
   </main>
 
-  <footer class="main-footer container">
+  <footer class="main-footer container dg-dark" id="contacts">
     <h2 class="visually-hidden section-title section-title--footer">А нужен ли он в футере?</h2>
 
     <div class="main-footer__wrapp">
       <h3 class="main-footer__title section-title section-title--footer">For questions and suggestions</h3>
-      <a class="subtitle subtitle--contacts" href="">email@shelter.com</a>
-      <a class="subtitle subtitle--contacts" href="">+13 674 567 75 54</a>
+      <a class="main-footer__icon main-footer__icon--email subtitle subtitle--contacts"
+        href="mailto:email@shelter.com">email@shelter.com</a>
+      <a class="main-footer__icon main-footer__icon--tel subtitle subtitle--contacts" href="tel:+136745677554">+13 674
+        567 75 54</a>
     </div>
 
     <div class="main-footer__wrapp">
       <h3 class="main-footer__title section-title section-title--footer">We are waiting for your visit</h3>
-      <a class="subtitle subtitle--contacts" href="">1 Central Street, Boston (entrance from the store)</a>
-      <a class="subtitle subtitle--contacts" href="">18 South Park, London </a>
+
+      <address class="main-footer__icon main-footer__icon--address">
+        <a class="subtitle subtitle--contacts" href="#">1 Central Street, Boston (entrance from the store)</a>
+      </address>
+
+      <address class="main-footer__icon main-footer__icon--address">
+        <a class="subtitle subtitle--contacts" href="#">18 South Park, London </a>
+      </address>
     </div>
 
     <img class="main-footer__img" src="./img/footer-puppy.png" alt="footer-puppy" width="300px" height="310px">

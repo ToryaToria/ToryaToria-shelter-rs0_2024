@@ -31,6 +31,16 @@
   background-color: $color-light-s;
   border-radius: 9px;
   padding-bottom: 30px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $color-white;
+
+   :not(:disabled).friends__button {
+      background-color: $color-primary-light;
+      border-color: $color-primary-light;
+    }
+  }
 }
 
 .friends__img {
@@ -46,4 +56,6 @@
 .friends__button {
   display: block;
   margin: 0 auto;
+  width: fit-content;
+  text-decoration: none;
 }

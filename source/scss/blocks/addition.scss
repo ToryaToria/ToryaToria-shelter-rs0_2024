@@ -18,6 +18,23 @@
 }
 
 .addition__button {
+  display: flex;
+  align-items: center;
 padding: 10px 15px;
 border-radius: 9px;
+text-decoration: none;
+
+&::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 23px;
+  background-image: url("../../img/icons/credit-card.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  margin-right: 15px;
+
+}
 }

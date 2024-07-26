@@ -17,6 +17,7 @@
 
 // BLOCKS
 @import "./blocks/logo.scss";
+@import "./blocks/bg-dark.scss";
 
 // @import "./blocks/icon.scss";
 @import "./blocks/main-nav.scss";
@@ -28,37 +29,12 @@
 
 @import "./blocks/about.scss";
 @import "./blocks/friends.scss";
+@import "./blocks/slider.scss";
 @import "./blocks/help.scss";
 @import "./blocks/addition.scss";
 @import "./blocks/main-footer.scss";
-
-
-
-// @import "./blocks/results.scss";
-// @import "./blocks/result-item.scss";
-// @import "./blocks/features.scss";
-// @import "./blocks/examples.scss";
-// @import "./blocks/property.scss";
-// @import "./blocks/main-footer.scss";
-// @import "./blocks/contacts.scss";
-// @import "./blocks/social.scss";
-// @import "./blocks/transfer-block.scss";
-// @import "./blocks/slider.scss";
-
 
 // BLOCKS catalog
 
 @import "./blocks/catalog.scss";
 @import "./blocks/pagination.scss";
-
-// @import "./blocks/product-card.scss";
-// @import "./blocks/main-products.scss";
-// @import "./blocks/additional-products.scss";
-// @import "./blocks/product-footer.scss";
-
-
-// BLOCKS form
-
-// @import "./blocks/form-main.scss";
-// @import "./blocks/form.scss";
-// @import "./blocks/control.scss";

@@ -1,4 +1,6 @@
 .button {
+  display: block;
+  width: fit-content;
   padding: 15px 45px;
   background-color: $color-primary;
   border: 2px solid $color-primary;
@@ -6,6 +8,12 @@
 
   &--second {
     background-color: transparent;
+  }
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
   }
 }
 
@@ -18,4 +26,17 @@
   &--second {
     background-color: transparent;
   }
+
+  &:not(:disabled):hover {
+    cursor: pointer;
+    background-color: $color-primary-light;
+    border-color: $color-primary-light;
+  }
+}
+
+.button:disabled,
+.button-pagination:disabled {
+  color: $color-dark-s;
+  border-color: $color-dark-s;
+  background-color: transparent;
 }
