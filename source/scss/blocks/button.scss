@@ -1,8 +1,19 @@
 .button {
   padding: 15px 45px;
   background-color: $color-primary;
-  border: 1px solid $color-primary;
+  border: 2px solid $color-primary;
   border-radius: 100px;
+
+  &--second {
+    background-color: transparent;
+  }
+}
+
+.button-pagination {
+  padding: 10px 10px;
+  background-color: $color-primary;
+  border: 2px solid $color-primary;
+  border-radius: 100%;
 
   &--second {
     background-color: transparent;

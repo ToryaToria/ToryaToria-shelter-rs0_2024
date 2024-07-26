@@ -1,0 +1,20 @@
+.pagination {
+  @include list-reset;
+
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.pagination__link {
+  box-sizing: border-box;
+  display: block;
+  width: 52px;
+  height: 52px;
+}
+
+.pagination__link:disabled {
+  color: $color-dark-s;
+  border-color: $color-dark-s;
+  background-color: transparent;
+}
