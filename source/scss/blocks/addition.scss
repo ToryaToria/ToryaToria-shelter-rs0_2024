@@ -1,5 +1,5 @@
 .addition {
-  padding-top: 80px;
+  padding-top: 81px;
   padding-bottom: 100px;
   background-color: $color-light-l;
 
@@ -20,9 +20,11 @@
 .addition__button {
   display: flex;
   align-items: center;
-padding: 10px 15px;
+padding: 8px 14px;
 border-radius: 9px;
 text-decoration: none;
+letter-spacing: 1.2px;
+
 
 &::before {
   content: "";
@@ -34,7 +36,7 @@ text-decoration: none;
   background-position: center;
   background-size: contain;
 
-  margin-right: 15px;
+  margin-right: 14px;
 
 }
 }

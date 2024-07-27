@@ -4,8 +4,8 @@
 
 .slider__wrapp {
   position: absolute;
-  top: 50%;
-  transform: translateY(50%);
+  top: 44%;
+  // transform: translateY(50%);
 
   width: 100%;
   display: flex;
@@ -40,8 +40,8 @@
   }
 
   &:disabled {
-  color: $color-dark-s;
-  border-color: $color-dark-s;
-  background-color: transparent;
-}
+    color: $color-dark-s;
+    border-color: $color-dark-s;
+    background-color: transparent;
+  }
 }

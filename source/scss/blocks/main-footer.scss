@@ -1,25 +1,31 @@
 .main-footer {
   padding-top: 40px;
-  display: flex;
-  gap: 60px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: auto 1fr 300px;
+  gap: 158px;
 }
 
 .main-footer__wrapp {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  max-width: 275px;
+  max-width: 280px;
+  padding-top: 16px;
+
+  &--2 {
+    gap: 34px;
+    max-width: 295px;
+  }
 }
 
 .main-footer__icon {
   display: flex;
   align-items: center;
   gap: 20px;
-  justify-content: start;
 
   &::before {
     box-sizing: border-box;
+    outline: auto;
 
     content: "";
     width: 40px;
@@ -39,7 +45,9 @@
   }
 
   &--address::before {
+    width: 22px;
+
     background-image: url("../../img/icons/icon-marker.png");
-    background-size: 23px 32px;
+    background-size: 22px 32px;
   }
 }

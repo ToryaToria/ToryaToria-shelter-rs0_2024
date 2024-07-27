@@ -5,7 +5,7 @@
 }
 
 .friends__title {
-  margin: 0 auto 25px;
+  margin: 0 auto 58px;
   width: fit-content;
   text-align: center;
 }
@@ -17,13 +17,12 @@
   gap: 90px;
   justify-content: center;
 
-  margin-bottom: 60px;
+  margin-bottom: 61px;
 
   &--catalog {
     flex-wrap: wrap;
     gap: 30px 40px;
-    padding-bottom: 15px;
-
+    // padding-bottom: 15px;
   }
 }
 
@@ -36,21 +35,21 @@
     cursor: pointer;
     background-color: $color-white;
 
-   :not(:disabled).friends__button {
+    :not(:disabled).friends__button {
       background-color: $color-primary-light;
       border-color: $color-primary-light;
     }
   }
 }
 
-.friends__img {
-  display: block;
+.friends__title-card {
+  text-align: center;
   margin-bottom: 30px;
 }
 
-.friends__title {
-  text-align: center;
-  margin-bottom: 30px;
+.friends__img {
+  display: block;
+  margin-bottom: 31px;
 }
 
 .friends__button {
