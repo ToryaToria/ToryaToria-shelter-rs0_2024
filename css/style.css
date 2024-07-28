@@ -4,35 +4,36 @@
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/ArialMT.woff2") format("woff2"), url("../../fonts/ArialMT.woff") format("woff");
+  src: url("../fonts/ArialMT.woff2") format("woff2"),
+   url("../fonts/ArialMT.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Arial";
   font-style: italic;
   font-weight: 400;
-  src: url("../../fonts/Arial-ItalicMT.woff2") format("woff2"), url("../../fonts/Arial-ItalicMT.woff") format("woff");
+  src: url("../fonts/Arial-ItalicMT.woff2") format("woff2"), url("../fonts/Arial-ItalicMT.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 400;
-  src: url("../../fonts/Georgia.woff2") format("woff2"), url("../../fonts/Georgia.woff") format("woff");
+  src: url("../fonts/Georgia.woff2") format("woff2"), url("../fonts/Georgia.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Georgia";
   font-style: normal;
   font-weight: 600;
-  src: url("../../fonts/Georgia-Bold.woff2") format("woff2"), url("../../fonts/Georgia-Bold.woff") format("woff");
+  src: url("../fonts/Georgia-Bold.woff2") format("woff2"), url("../../fonts/Georgia-Bold.woff") format("woff");
   font-display: swap;
 }
 @font-face {
   font-family: "Georgia";
   font-style: italic;
   font-weight: 400;
-  src: url("../../fonts/Georgia-Italic.woff2") format("woff2"), url("../../fonts/Georgia-Italic.woff") format("woff");
+  src: url("../fonts/Georgia-Italic.woff2") format("woff2"), url("../fonts/Georgia-Italic.woff") format("woff");
   font-display: swap;
 }
 .basic-text {
@@ -185,7 +186,7 @@
   background-color: #9bbaba;
   min-width: 320px;
   max-width: 1280px;
-  outline: 1px solid #ff0000;
+  /* outline: 1px solid #ff0000; */
   /*  для стики-футера*/
   display: flex;
   min-height: 100%;
@@ -216,7 +217,7 @@
 
 .dg-dark {
   background-color: #211f20;
-  background-image: url("../../img/bg/bg-pattern.png"), linear-gradient(to right, #5b483a, #262425);
+  background-image: url("../img/bg/bg-pattern.png"), linear-gradient(to right, #5b483a, #262425);
   background-repeat: repeat;
 }
 
@@ -438,10 +439,10 @@
 }
 .slider__btn--left {
   transform: rotate(180deg);
-  background-image: url("../../img/Arrow.svg");
+  background-image: url("../img/Arrow.svg");
 }
 .slider__btn--right {
-  background-image: url("../../img/Arrow.svg");
+  background-image: url("../img/Arrow.svg");
 }
 .slider__btn:not(:disabled):hover {
   cursor: pointer;
@@ -516,7 +517,7 @@
   display: inline-block;
   width: 30px;
   height: 23px;
-  background-image: url("../../img/icons/credit-card.svg");
+  background-image: url("../img/icons/credit-card.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
