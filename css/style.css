@@ -558,14 +558,14 @@
   background-size: 40px 32px;
 }
 .main-footer__icon--email::before {
-  background-image: url("../../img/icons/icon-email.svg");
+  background-image: url("../img/icons/icon-email.svg");
 }
 .main-footer__icon--tel::before {
-  background-image: url("../../img/icons/icon-phone.svg");
+  background-image: url("../img/icons/icon-phone.svg");
 }
 .main-footer__icon--address::before {
   width: 40px;
-  background-image: url("../../img/icons/icon-marker.png");
+  background-image: url("../img/icons/icon-marker.png");
   background-size: 22px 32px;
 }
 
