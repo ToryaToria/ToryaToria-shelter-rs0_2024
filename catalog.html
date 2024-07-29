@@ -6,10 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter catalog</title>
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./favicon.ico">
+
 </head>
 
 <body class="page__body basic-text">
-  <header class="container header header--catalog">
+  <header class="header--catalog">
+    <div class="container header">
     <a class="logo" href="./index.html" aria-current="page">
       <p class="logo__wrapp">
         <span class="logo-title logo-title--catalog">Cozy House</span>
@@ -34,10 +37,12 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main class="page__main">
-    <section class="catalog friends container">
+    <section class="catalog friends">
+      <div class="container">
       <h1 class="catalog__title section-title">Our friends who <br>
         are looking for a house</h1>
 
@@ -57,7 +62,7 @@
         <li class="friends__item">
           <img class="friends__img" src="./img/pets-woody.png" alt="" width="270" height="270">
           <h3 class="friends__title-card subtitle">Woody</h3>
-          <button class="friends__button button button--second button-text" type="button" disabled>Learn more</button>
+          <button class="friends__button button button--second button-text" type="button">Learn more</button>
         </li>
 
         <li class="friends__item">
@@ -98,7 +103,7 @@
         </li>
 
         <li class="pagination__item">
-          <button class="pagination__link button-pagination subtitle" type="button" disabled>
+          <button class="pagination__link button-pagination button-pagination--second subtitle" type="button" disabled>
             < </button>
         </li>
 
@@ -115,11 +120,12 @@
             type="button">>></button>
         </li>
       </ul>
-
+      </div>
     </section>
   </main>
 
-  <footer class="main-footer container dg-dark" id="contacts">
+  <footer class="dg-dark" id="contacts">
+    <div class="main-footer container">
     <h2 class="visually-hidden section-title section-title--footer">А нужен ли он в футере?</h2>
 
     <div class="main-footer__wrapp">
@@ -143,6 +149,7 @@
     </div>
 
     <img class="main-footer__img" src="./img/footer-puppy.png" alt="footer-puppy" width="300px" height="310px">
+    </div>
   </footer>
 </body>
 

@@ -185,7 +185,7 @@
   margin: 0 auto;
   background-color: #9bbaba;
   min-width: 320px;
-  max-width: 1280px;
+  /* max-width: 1280px; */
   /* outline: 1px solid #ff0000; */
   /*  для стики-футера*/
   display: flex;
@@ -199,6 +199,8 @@
   margin: 0 auto;
   padding-left: 40px;
   padding-right: 40px;
+
+  max-width: 1280px;
 }
 
 .logo {
@@ -248,6 +250,7 @@
 }
 .main-nav__link--current {
   color: #fafafa;
+  cursor: default;
 }
 .main-nav__link--current::after {
   content: "";
@@ -335,6 +338,10 @@
   padding-top: 80px;
   padding-bottom: 100px;
   background-color: #ffffff;
+
+}
+
+.about__container {
   display: flex;
   align-items: start;
   gap: 120px;
@@ -390,6 +397,7 @@
 .friends__item:hover {
   cursor: pointer;
   background-color: #ffffff;
+  box-shadow: 0 2px 35px 14px rgba(13, 13, 13, 0.04);
 }
 .friends__item:hover :not(:disabled).friends__button {
   background-color: #fddcc4;
@@ -491,6 +499,10 @@
   padding-top: 81px;
   padding-bottom: 100px;
   background-color: #f6f6f6;
+
+}
+
+.addition__container {
   display: flex;
   gap: 30px;
   justify-content: center;

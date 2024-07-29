@@ -5,11 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
+  <link rel="icon" href="./favicon.ico">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="page__body basic-text">
-  <header class="container header dg-dark">
+  <header class="dg-dark">
+    <div class="container header">
     <a class="logo" href="./index.html" aria-current="page">
       <p class="logo__wrapp">
         <span class="logo-title">Cozy House</span>
@@ -20,8 +22,7 @@
     <nav class="main-nav">
       <ul class="main-nav__list">
         <li class="main-nab__item">
-          <a class="main-nav__link main-nav__link--current basic-text" href="./index.html" aria-current="page">About the
-            shelter</a>
+          <a class="main-nav__link main-nav__link--current basic-text" href="#">About the shelter</a>
         </li>
 
         <li class="main-nab__item">
@@ -37,10 +38,12 @@
         </li>
       </ul>
     </nav>
+    </div>
   </header>
 
   <main class="page__main">
-    <section class="hero container dg-dark">
+    <section class="dg-dark">
+      <div class="hero container">
       <h1 class="visually-hidden">Cozy House</h1>
 
       <div class="hero_wrapp">
@@ -52,9 +55,11 @@
 
       </div>
       <img src="./img/start-screen-puppy.png" alt=puppy" width="698" height="728">
+      </div>
     </section>
 
-    <section class="about container">
+    <section class="about">
+      <div class="about__container container">
       <img src="./img/about-pets.png" alt="about-pets" width="300" height="408">
 
       <div class="about__wrapp">
@@ -75,9 +80,11 @@
           and
           would hardly ever leave them alone.</p>
       </div>
+      </div>
     </section>
 
-    <section class="friends container" id="frends">
+    <section class="friends" id="frends">
+      <div class="container">
       <h2 class="friends__title section-title">Our friends who <br>
         are looking for a house</h2>
 
@@ -107,19 +114,20 @@
             <span class="visually-hidden">туда</span>
           </button>
 
-          <button class="slider__btn slider__btn--right-" type="button" disabled>
+          <button class="slider__btn slider__btn--right-" type="button">
             <img src="./img/Arrow.svg" alt="сюда">
             <!-- <span class="visually-hidden">сюда</span> -->
           </button>
         </div>
       </div>
 
-
       <a class="friends__button button button-text" href="./catalog.html">Get to know the rest</a>
+      </div>
     </section>
 
-    <section class="help container" id="help">
-      <h2 class="help__title section-title">How you can help <br>
+    <section class="help" id="help">
+      <div class="container">
+        <h2 class="help__title section-title">How you can help <br>
         our shelter</h2>
 
       <ul class="help__list">
@@ -168,9 +176,11 @@
           <p class="help__title-card subtitle">Sleeping areas</p>
         </li>
       </ul>
+      </div>
     </section>
 
-    <section class="addition container">
+    <section class="addition">
+      <div class="addition__container container">
       <img class="addition__img" src="./img/donation-dog.png" alt="donation-dog" width="505" height="261">
 
       <div class="addition__wrapp">
@@ -184,11 +194,12 @@
           malesuada fames ac ante ipsum primis in faucibus.
         </p>
       </div>
-
+      </div>
     </section>
   </main>
 
-  <footer class="main-footer container dg-dark" id="contacts">
+  <footer class="dg-dark" id="contacts">
+    <div class=" main-footer container">
     <h2 class="visually-hidden section-title section-title--footer">А нужен ли он в футере?</h2>
 
     <div class="main-footer__wrapp">
@@ -212,6 +223,7 @@
     </div>
 
     <img class="main-footer__img" src="./img/footer-puppy.png" alt="footer-puppy" width="300px" height="310px">
+    </div>
   </footer>
 
 </body>
