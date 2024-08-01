@@ -576,7 +576,13 @@
   align-items: center;
   grid-template-columns: 40px auto;
   gap: 20px;
+  transition: 0.3s ease-in-out;
 }
+
+.main-footer__icon:hover {
+  opacity: 0.6;
+}
+
 .main-footer__icon::before {
   box-sizing: border-box;
   content: "";
@@ -624,5 +630,9 @@
   display: block;
   width: 52px;
   height: 52px;
+}
+
+.pagination__number {
+pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
