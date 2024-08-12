@@ -310,6 +310,14 @@
   padding-top: 59px;
 }
 
+
+.hero__img {
+  display: block;
+  width: 698px;
+  height: 728px;
+  margin-left: auto;
+}
+
 .hero__horizon-wrapp {
   display: flex;
   align-items: start;
@@ -729,10 +737,9 @@
   }
 
   .hero__img {
-    display: block;
     width: 569px;
     height: 593px;
-    margin-left: 69px;
+    margin-left: auto;
   }
 
   .hero__button {
@@ -774,6 +781,10 @@
 
   .help__title-card {
     margin-top: 23px;
+  }
+
+  .help__list {
+    justify-content: center;
   }
 
   .addition__container {
@@ -886,7 +897,7 @@
   .hero__img {
     width: 260px;
     height: 272px;
-    margin-left: 40px;
+    padding-left: 40px;
   }
 
   .about {
@@ -1016,7 +1027,7 @@
     box-sizing: border-box;
     margin-left: 9px;
     margin-right: 10px;
-   font-size: 15px;
+    font-size: 15px;
     letter-spacing: 0.9px;
     line-height: 110%;
     padding-left: 13px;
