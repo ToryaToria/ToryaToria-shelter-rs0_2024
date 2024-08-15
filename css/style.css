@@ -434,9 +434,10 @@
   margin-bottom: 0;
   padding-left: 0;
   list-style: none;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(270px,1fr));;
   gap: 90px;
-  justify-content: center;
+  /* justify-content: center; */
   margin-bottom: 61px;
 }
 
@@ -471,6 +472,7 @@
 
 .friends__img {
   display: block;
+  margin: 0 auto;
   margin-bottom: 31px;
 }
 
@@ -822,7 +824,7 @@
     padding-bottom: 76px;
   }
 
-  .friends__item--2 {
+    .friends__item--2 {
     display: none;
   }
 
@@ -946,7 +948,8 @@
 
   .friends__list {
     margin-bottom: 20px;
-  }
+    }
+
 
   .friends__item--1 {
     display: none;
@@ -1150,15 +1153,9 @@
   .hamburger--catalog::before {
     background-color: #000000;
     box-shadow: 0 9px 0 0 #000000, 0 18px 0 0 #000000;
-
-
   }
 
-  .hamburger--catalog {
-    
-  }
-
-  .hamburger--closed::after {
+    .hamburger--closed::after {
     transform: rotate(90deg);
   }
 
